@@ -11,16 +11,25 @@ import java.sql.*;
 public class Connect {
 
 	private final static Logger LOGGER =Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
-		
+
+	public  static Connection con;
 	
 	public static  Connection  dbcon(String Driver,String Path,String U,String P) throws ClassNotFoundException, SQLException {
 		
 		
 		Class.forName(Driver);
-		Connection con=(Connection) DriverManager.getConnection(Path,U,P);
-			
+		con=(Connection) DriverManager.getConnection(Path,U,P);
+		
 		return con;
 	
+	}	
+	
+	public static  void  Setdbcon(String Driver,String Path,String U,String P) throws ClassNotFoundException, SQLException {
+		
+		
+		Class.forName(Driver);
+		con=(Connection) DriverManager.getConnection(Path,U,P);
+		
 	}	
 }
 
