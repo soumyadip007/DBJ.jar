@@ -4,8 +4,8 @@ package com.dbj.connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.logging.Logger;
-
-import com.mysql.jdbc.Connection;
+import java.sql.*;
+//import com.mysql.jdbc.Connection;
 
 
 public class Connect {
