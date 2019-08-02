@@ -15,11 +15,24 @@ public class Connect {
 
 	public  static Connection con;
 	
-	public static  Connection  dbcon(String Driver,String Path,String U,String P) throws ClassNotFoundException, SQLException {
+	public static  Connection  dbcon(String Driver,String Path,String U,String P) {
 		
 		
-		Class.forName(Driver);
-		con=(Connection) DriverManager.getConnection(Path,U,P);
+		try {
+			Class.forName(Driver);
+		} catch (ClassNotFoundException e) {
+			
+			LOGGER.log(Level.WARNING, "ClassNotFoundException");
+			e.printStackTrace();
+		}
+		try {
+			con=(Connection) DriverManager.getConnection(Path,U,P);
+		
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}
 
 		LOGGER.log(Level.INFO, "Connection established \nDriver:"
 				+ Driver+"\nPath:"+Path+"\nUsername:"+U+"\nPassword:"+P);
@@ -28,12 +41,25 @@ public class Connect {
 	
 	}	
 	
-	public static  void  Setdbcon(String Driver,String Path,String U,String P) throws ClassNotFoundException, SQLException {
+	public static  void  Setdbcon(String Driver,String Path,String U,String P) {
 		
 		
-		Class.forName(Driver);
-		con=(Connection) DriverManager.getConnection(Path,U,P);
+		try {
+			Class.forName(Driver);
+		} catch (ClassNotFoundException e) {
+			
+			LOGGER.log(Level.WARNING, "ClassNotFoundException");
+			e.printStackTrace();
+		}
+		try {
+			con=(Connection) DriverManager.getConnection(Path,U,P);
 		
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}
+
 		LOGGER.log(Level.INFO, "Connection established \nDriver:"
 				+ Driver+"\nPath:"+Path+"\nUsername:"+U+"\nPassword:"+P);
 	
