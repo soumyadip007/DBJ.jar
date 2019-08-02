@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.dbj</groupId>
-  <artifactId>ccom.github.dbj</artifactId>
+  <artifactId>dbj</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>DBJ_src</sourceDirectory>
@@ -16,4 +16,19 @@
       </plugin>
     </plugins>
   </build>
+  <packaging>jar</packaging>
+  
+  <name>DBJ.jar is for java database management</name>
+  <description>A JAR file for replacement of native JDBC protocol ,which can connect to database 
+  with some Method, So user have to give the credentials and the parameter into the function</description>
+  <url>https://github.com/soumyadip007/DBJ.jar</url>
+  
+  <licenses>
+  <license>
+    <name>The Apache License, Version 2.0</name>
+    <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+  </license>
+</licenses>
+  
+  
 </project>
