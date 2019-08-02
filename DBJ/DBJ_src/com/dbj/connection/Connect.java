@@ -3,6 +3,7 @@ package com.dbj.connection;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.*;
 //import com.mysql.jdbc.Connection;
@@ -19,6 +20,9 @@ public class Connect {
 		
 		Class.forName(Driver);
 		con=(Connection) DriverManager.getConnection(Path,U,P);
+
+		LOGGER.log(Level.INFO, "Connection established \nDriver:"
+				+ Driver+"\nPath:"+Path+"\nUsername:"+U+"\nPassword:"+P);
 		
 		return con;
 	
