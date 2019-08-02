@@ -1,20 +1,17 @@
 package DAO_DBJ;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
+import Connection_DBJ.Connection;
 
+import java.sql.*;
 class Dao {
-
-	//private Connection con;
 	
 		int insert(String name,String user,long mob,String email,String pass) 
 		{
 			try{
 
 				Connection con=Connection.dbcon();
-			//	String query="INSERT INTO account(name, user, mob, email, pass) VALUES(?,?,?,?,?)";
+		
+				//	String query="INSERT INTO account(name, user, mob, email, pass) VALUES(?,?,?,?,?)";
 				PreparedStatement st=con.prepareStatement("INSERT INTO account(name, user, mob, email, pass) VALUES(?,?,?,?,?)");
 				st.setString(1,name);
 				st.setString(2,user);
