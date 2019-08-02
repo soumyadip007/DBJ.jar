@@ -39,13 +39,11 @@
     </developer>
   </developers>
   
-  
-  <scm>
-  <connection>scm:svn:https://github.com/soumyadip007/DBJ.jar.git</connection>
-  <developerConnection>scm:svn:https://github.com/soumyadip007</developerConnection>
-  <url>https://github.com/soumyadip007/DBJ.jar</url>
-	</scm>
 
-
+<scm>
+  <connection>scm:git:git://github.com/soumyadip007/DBJ.jar.git</connection>
+  <developerConnection>scm:git:ssh://github.com:soumyadip007/DBJ.jar.git</developerConnection>
+   <url>https://github.com/soumyadip007/DBJ.jar</url>
+</scm>
   
 </project>
