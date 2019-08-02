@@ -34,6 +34,9 @@ public class Connect {
 		Class.forName(Driver);
 		con=(Connection) DriverManager.getConnection(Path,U,P);
 		
+		LOGGER.log(Level.INFO, "Connection established \nDriver:"
+				+ Driver+"\nPath:"+Path+"\nUsername:"+U+"\nPassword:"+P);
+	
 	}	
 }
 
