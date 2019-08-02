@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 import com.dbj.connection.Connect;
 
-class Dao {
+class Dao_Test {
 	
 	public static void main(String args[]){
 	
