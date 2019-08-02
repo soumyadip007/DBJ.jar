@@ -13,11 +13,9 @@ public class Connect {
 		
 		Class.forName(Driver);
 		Connection con=(Connection) DriverManager.getConnection(Path,U,P);
-		
-//		Class.forName("com.mysql.jdbc.Driver");
-//		Connection con=(Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/resell","root","");
-		
-	return con;
-}	
+			
+		return con;
+	
+	}	
 }
 
