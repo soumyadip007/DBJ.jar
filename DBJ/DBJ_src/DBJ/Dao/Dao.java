@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.dbj.Connection.Connect;
+import com.dbj.connection.Connect;
 
 class Dao {
 	
