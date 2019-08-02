@@ -1,4 +1,4 @@
-package DBJ.Dao;
+package com.dbj.dao;
 
 
 import java.sql.Connection;
