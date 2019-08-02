@@ -30,5 +30,13 @@
   </license>
 </licenses>
   
+   <developers>
+    <developer>
+      <name>Soumyadip Chowdhury</name>
+      <email>soumyadip.note@gmail.com</email>
+      <organization>com.github.soumyadip007</organization>
+      <organizationUrl>https://github.com/soumyadip007</organizationUrl>
+    </developer>
+  </developers>
   
 </project>
