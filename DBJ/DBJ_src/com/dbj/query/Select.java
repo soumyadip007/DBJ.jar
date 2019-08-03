@@ -21,7 +21,7 @@ public class Select {
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
 		String mainStmt="Select * from "+table;
-		
+		LOGGER.log(Level.INFO,"Query : "+mainStmt);
 		try {
 			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		
@@ -52,7 +52,7 @@ public class Select {
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
 		String mainStmt="Select * from "+table;
-		
+		LOGGER.log(Level.INFO,"Query : "+mainStmt);
 		try {
 			PreparedStatement st=con.prepareStatement(mainStmt);
 		
@@ -80,5 +80,38 @@ public class Select {
 		return rs;
 	}
 	
+	
+	public static ResultSet Get(String table,String index,String value)
+	{
+		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		
+		String mainStmt="Select * from "+table+" where "+index+"="+value;
+		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		try {
+			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
+		
+
+			rs=st.executeQuery();
+			if(rs!=null)
+			{
+				LOGGER.log(Level.INFO, "Data Successfully retrived");
+				return rs;
+			}
+			else
+			{
+				LOGGER.log(Level.INFO, "Database connection failed");
+				return rs;
+			}
+			
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}		
+		
+		
+		
+		return rs;
+	}
 	
 }
