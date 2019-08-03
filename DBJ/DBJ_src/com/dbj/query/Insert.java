@@ -1,8 +1,12 @@
 package com.dbj.query;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import com.dbj.connection.Connect;
 
 public class Insert {
 
@@ -60,17 +64,41 @@ public class Insert {
 	
 	
 	public static void main(String args[]) {
+
+	Connection con=(Connection) Connect.Getdbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 		
 		
-	String[] l={"Apple", "Banana", "Orange", "Grapes"};
+	String[] l={"first_name", "last_name", "email"};
 	String paramResult;
 	LOGGER.log(Level.INFO, paramResult=ParamOpt(l));
 	
-	String a;
-	LOGGER.log(Level.INFO, a=getMark(l));
+	String valueResult;
+	LOGGER.log(Level.INFO, valueResult=getMark(l));
+	int n=l.length;
 	
-	String mainStmt="INSERT INTO "+"customer"+"("+paramResult+") values("+ a+")";
+	String mainStmt="INSERT INTO "+"customer"+"("+paramResult+") values("+valueResult+")";
 	LOGGER.log(Level.INFO, mainStmt);
+	
+	try {
+		PreparedStatement st=con.prepareStatement(mainStmt);
+		int i=0;
+		while(i<n)
+		{
+			st.setString((i+1), l[i]);
+		i++;
+		}
+
+		int check=st.executeUpdate();
+	
+		
+	} catch (SQLException e) {
+		
+		LOGGER.log(Level.WARNING, "SQLException");
+		e.printStackTrace();
+	}
+	
+	
+	
 	}
 
 }
