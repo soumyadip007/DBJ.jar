@@ -22,13 +22,14 @@ class Dao_Test {
 	
 		Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 		String[] index={"first_name", "last_name", "email"};
-		String[] value={"Soumyadip", "Chowdhury", "x@gmail.com"};
-//		Insert.Save("customer",index,value);
+		String[] value={"Soumyadip", "Chowdhury", "gdg@gmail.com"};
+		Insert.Save("customer",index,value);
 		ResultSet rs=Select.Get("customer",index,value);
 		try {
 			while(rs.next())
 			{
 				System.out.println(rs.getString(2));
+				System.out.println(rs.getString(4));
 			}
 		} catch (SQLException e) {
 			
