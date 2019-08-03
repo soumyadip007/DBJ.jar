@@ -211,13 +211,19 @@ public class Select {
 	
 	public static String genAnd(String[] index,String[] value)
 	{
-		String x="";
 		int n=value.length,i=0;
+		String statement=index[0]+"='"+value[0]+"'";
+		if(n==1)
+			return statement;
+		
+		int i=1;
 		while(i<n)
 		{
-			
+			statement=statement+","
 		}
 		
+		
+		return x;
 	}
 
 	public static ResultSet Get(String table,String[] index,String[] value)
