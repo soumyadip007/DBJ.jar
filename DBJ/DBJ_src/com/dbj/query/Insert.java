@@ -54,7 +54,7 @@ public class Insert {
 	}
 	
 	
-	public static void Insert(String table,String[] param,String[] value) {
+	public static void Save(String table,String[] param,String[] value) {
 
 		if(param.length!=value.length)
 		{
@@ -106,7 +106,7 @@ public class Insert {
 	}
 	
 	
-	public static void Insert(Connection con,String table,String[] param,String[] value) {
+	public static void Save(Connection con,String table,String[] param,String[] value) {
 
 		if(param.length!=value.length)
 		{
@@ -163,7 +163,7 @@ public class Insert {
 	Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 	String[] l={"first_name", "last_name", "email"};
 	//String[] p={"first_name", "last_name"};
-	Insert("customer",l,l);
+	Save("customer",l,l);
 	
 	
 	/*

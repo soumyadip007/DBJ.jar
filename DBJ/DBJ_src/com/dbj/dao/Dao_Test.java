@@ -19,7 +19,7 @@ class Dao_Test {
 	
 		Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 		String[] l={"first_name", "last_name", "email"};
-		Insert.Insert("customer",l,l);
+		Insert.Save("customer",l,l);
 		
 	
 	}
