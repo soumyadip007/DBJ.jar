@@ -33,7 +33,7 @@ public class Insert {
 	public static String getMark(String[] value)
 	{
 		int n=value.length;
-		LOGGER.log(Level.INFO, n+"");
+		LOGGER.log(Level.INFO, "Value size"+n);
 		String res;
 		if(n==1)
 		{
