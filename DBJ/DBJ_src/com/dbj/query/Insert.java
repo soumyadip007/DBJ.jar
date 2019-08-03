@@ -108,7 +108,7 @@ public class Insert {
 	
 	public static void main(String args[]) {
 
-	Connect.dbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
+	Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 	String[] l={"first_name", "last_name", "email"};
 	//String[] p={"first_name", "last_name"};
 	Insert("customer",l,l);
