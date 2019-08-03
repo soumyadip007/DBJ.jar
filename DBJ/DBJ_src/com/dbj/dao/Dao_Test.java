@@ -18,9 +18,6 @@ class Dao_Test {
 		Connection con=(Connection) Connect.Getdbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/resell","root","");
 	
 	
-		String[] l={"Apple", "Banana", "Orange", "Grapes"};
-		String x;
-		LOGGER.log(Level.INFO, x=Insert.ParamOpt(l));
 	}
 		
 	}
