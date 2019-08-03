@@ -29,16 +29,7 @@ public class Insert {
 		return statement;
 	}
 
-	
-	public static void Insert(Connection con,String table,String[] param,String[] value) {
 
-		String paramResult;
-		LOGGER.log(Level.INFO, paramResult=ParamOpt(param));
-		
-		
-		
-	}
-	
 	public static String getMark(String[] value)
 	{
 		int n=value.length;
@@ -63,10 +54,57 @@ public class Insert {
 	}
 	
 	
+	public static void Insert(String table,String[] param,String[] value) {
+
+		String paramResult;
+		LOGGER.log(Level.INFO, paramResult=ParamOpt(param));
+		
+		String valueResult;
+		LOGGER.log(Level.INFO, valueResult=getMark(value));
+		int n=value.length;
+		
+		String mainStmt="INSERT INTO "+table+"("+paramResult+") values("+valueResult+")";
+		LOGGER.log(Level.INFO, mainStmt);
+		
+		try {
+			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
+			int i=0;
+			while(i<n)
+			{
+				st.setString((i+1), value[i]);
+			i++;
+			}
+
+			int check=st.executeUpdate();
+			if(check==1)
+			{
+				LOGGER.log(Level.INFO, "Data Successfully added");
+			}
+			else
+			{
+				LOGGER.log(Level.INFO, "Database connection failed");
+			}
+			
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
 	public static void main(String args[]) {
 
-	Connection con=(Connection) Connect.Getdbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
-		
+	Connect.dbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
+	String[] l={"first_name", "last_name", "email"};
+	Insert("customer",l,l);
+	
+	
+	/*
 		
 	String[] l={"first_name", "last_name", "email"};
 	String paramResult;
@@ -80,7 +118,7 @@ public class Insert {
 	LOGGER.log(Level.INFO, mainStmt);
 	
 	try {
-		PreparedStatement st=con.prepareStatement(mainStmt);
+		PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		int i=0;
 		while(i<n)
 		{
@@ -89,13 +127,20 @@ public class Insert {
 		}
 
 		int check=st.executeUpdate();
-	
+		if(check==1)
+		{
+			LOGGER.log(Level.INFO, "Data Successfully added");
+		}
+		else
+		{
+			LOGGER.log(Level.INFO, "Database connection failed");
+		}
 		
 	} catch (SQLException e) {
 		
 		LOGGER.log(Level.WARNING, "SQLException");
 		e.printStackTrace();
-	}
+	}*/
 	
 	
 	
