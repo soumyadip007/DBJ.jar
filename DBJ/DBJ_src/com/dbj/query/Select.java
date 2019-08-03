@@ -49,6 +49,31 @@ public class Select {
 	
 	public static ResultSet GetAll(Connection con,String table)
 	{
+		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		
+		String mainStmt="Select * from "+table;
+		
+		try {
+			PreparedStatement st=con.prepareStatement(mainStmt);
+		
+
+			rs=st.executeQuery();
+			if(rs!=null)
+			{
+				LOGGER.log(Level.INFO, "Data Successfully retrived");
+				return rs;
+			}
+			else
+			{
+				LOGGER.log(Level.INFO, "Database connection failed");
+				return rs;
+			}
+			
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}		
 		
 		
 		
