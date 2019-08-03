@@ -262,5 +262,10 @@ public class Select {
 		return rs;
 	}
 	
-	
+	public static void main(String args[])
+	{
+		String[] index={"first_name", "last_name", "email"};
+		String[] value={"Soumyadip", "Choudhury", "x@gmail.com"};
+		genAnd(index,value);
+	}
 }
