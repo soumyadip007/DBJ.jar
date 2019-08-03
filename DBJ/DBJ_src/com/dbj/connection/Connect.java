@@ -15,7 +15,7 @@ public class Connect {
 
 	public  static Connection con;
 	
-	public static  Connection  getdbcon(String Driver,String Path,String U,String P) {
+	public static  Connection  Getdbcon(String Driver,String Path,String U,String P) {
 		
 		
 		try {
