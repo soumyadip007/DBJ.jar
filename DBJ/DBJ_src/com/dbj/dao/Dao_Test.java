@@ -18,12 +18,12 @@ class Dao_Test {
 	
 	public static void main(String args[]){
 	
-		Connection con=(Connection) Connect.GetConnect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/resell","root","");
+	//	Connection con=(Connection) Connect.GetConnect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/resell","root","");
 	
 		Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
-	//	String[] index={"first_name", "last_name", "email"};
-	//	String[] value={"Soumyadip", "Choudhury", "x@gmail.com"};
-	//	Insert.Save("customer",index,value);
+		String[] index={"first_name", "last_name", "email"};
+		String[] value={"Soumyadip", "Choudhury", "x@gmail.com"};
+		Insert.Save("customer",index,value);
 		ResultSet rs=Select.GetAll("customer");
 		try {
 			while(rs.next())
