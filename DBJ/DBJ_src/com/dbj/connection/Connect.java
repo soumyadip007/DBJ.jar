@@ -15,7 +15,7 @@ public class Connect {
 
 	public  static Connection con;
 	
-	public static  Connection  dbcon(String Driver,String Path,String U,String P) {
+	public static  Connection  getdbcon(String Driver,String Path,String U,String P) {
 		
 		
 		try {
@@ -41,7 +41,7 @@ public class Connect {
 	
 	}	
 	
-	public static  void  Setdbcon(String Driver,String Path,String U,String P) {
+	public static  void  dbcon(String Driver,String Path,String U,String P) {
 		
 		
 		try {
