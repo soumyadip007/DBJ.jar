@@ -17,6 +17,10 @@ class Dao_Test {
 	
 		Connection con=(Connection) Connect.Getdbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/resell","root","");
 	
+		Connect.dbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
+		String[] l={"first_name", "last_name", "email"};
+		Insert.Insert("customer",l,l);
+		
 	
 	}
 		
