@@ -71,6 +71,7 @@ public class Insert {
 			int i=0;
 			while(i<n)
 			{
+				LOGGER.log(Level.INFO, "Wrapping value: "+value[i]);
 				st.setString((i+1), value[i]);
 			i++;
 			}
