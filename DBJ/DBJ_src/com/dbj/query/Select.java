@@ -215,15 +215,16 @@ public class Select {
 		String statement=index[0]+"='"+value[0]+"'";
 		if(n==1)
 			return statement;
-		
-		int i=1;
+		i=1;
 		while(i<n)
 		{
-			statement=statement+","
+			statement=statement+","+index[i]+"='"+value[i]+"'";
+			i++;
 		}
+
+		LOGGER.log(Level.INFO, "Where and query created :"+statement);
 		
-		
-		return x;
+		return statement;
 	}
 
 	public static ResultSet Get(String table,String[] index,String[] value)
