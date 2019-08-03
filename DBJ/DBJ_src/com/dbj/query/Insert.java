@@ -56,12 +56,20 @@ public class Insert {
 	
 	public static void Insert(String table,String[] param,String[] value) {
 
+		if(param.length!=value.length)
+		{
+			LOGGER.log(Level.INFO,"Mismatch with parameters and values\nexit(0)");
+			return ;
+		}
+		
 		String paramResult;
 		LOGGER.log(Level.INFO, paramResult=ParamOpt(param));
 		
 		String valueResult;
 		LOGGER.log(Level.INFO, valueResult=getMark(value));
 		int n=value.length;
+		
+		
 		
 		String mainStmt="INSERT INTO "+table+"("+paramResult+") values("+valueResult+")";
 		LOGGER.log(Level.INFO, mainStmt);
@@ -102,6 +110,7 @@ public class Insert {
 
 	Connect.dbcon("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 	String[] l={"first_name", "last_name", "email"};
+	//String[] p={"first_name", "last_name"};
 	Insert("customer",l,l);
 	
 	
