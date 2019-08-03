@@ -21,7 +21,7 @@ public class Select {
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
 		String mainStmt="Select * from "+table;
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		
@@ -52,7 +52,7 @@ public class Select {
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
 		String mainStmt="Select * from "+table;
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=con.prepareStatement(mainStmt);
 		
@@ -83,10 +83,10 @@ public class Select {
 	
 	public static ResultSet Get(String table,String index,String value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+index+"='"+value+"'";
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		
@@ -116,10 +116,10 @@ public class Select {
 	
 	public static ResultSet Get(Connection con,String table,String index,String value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+index+"="+value;
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=con.prepareStatement(mainStmt);
 		
@@ -147,10 +147,10 @@ public class Select {
 	
 	public static ResultSet Search(String table,String index,String value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+index+"='"+value+"'";
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		
@@ -180,10 +180,10 @@ public class Select {
 	
 	public static ResultSet Search(Connection con,String table,String index,String value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+index+"="+value;
-		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
 		try {
 			PreparedStatement st=con.prepareStatement(mainStmt);
 		
@@ -229,7 +229,7 @@ public class Select {
 
 	public static ResultSet Get(String table,String[] index,String[] value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
 		
@@ -262,7 +262,7 @@ public class Select {
 
 	public static ResultSet Get(Connection con,String table,String[] index,String[] value)
 	{
-		LOGGER.log(Level.INFO,"Fetch from : "+table);
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
 		
