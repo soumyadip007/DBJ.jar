@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 import com.dbj.connection.Connect;
 
-public class Insert implements Insert_dbj{
+public class Insert {
 
 	 private final static Logger LOGGER =Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
 	
