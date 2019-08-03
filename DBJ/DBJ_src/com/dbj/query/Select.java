@@ -292,4 +292,71 @@ public class Select {
 		
 		return rs;
 	}
+	
+
+	public static ResultSet Search(String table,String[] index,String[] value)
+	{
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
+		
+		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
+		
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
+		
+		try {
+			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
+		
+
+			rs=st.executeQuery();
+			if(rs!=null)
+			{
+				LOGGER.log(Level.INFO, "Data Successfully retrived");
+				return rs;
+			}
+			else
+			{
+				LOGGER.log(Level.INFO, "Database connection failed");
+				return rs;
+			}
+			
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}		
+		
+		return rs;
+	}
+
+	public static ResultSet Search(Connection con,String table,String[] index,String[] value)
+	{
+		LOGGER.log(Level.INFO,"Fetching from : "+table);
+		
+		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
+		
+		LOGGER.log(Level.INFO,"Executing Query : "+mainStmt);
+		
+		try {
+			PreparedStatement st=con.prepareStatement(mainStmt);
+		
+
+			rs=st.executeQuery();
+			if(rs!=null)
+			{
+				LOGGER.log(Level.INFO, "Data Successfully retrived");
+				return rs;
+			}
+			else
+			{
+				LOGGER.log(Level.INFO, "Database connection failed");
+				return rs;
+			}
+			
+		} catch (SQLException e) {
+			
+			LOGGER.log(Level.WARNING, "SQLException");
+			e.printStackTrace();
+		}		
+		
+		return rs;
+	}
 }
