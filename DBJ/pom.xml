@@ -124,7 +124,7 @@
 <scm>
   <connection>scm:git:git://github.com/soumyadip007/DBJ.jar.git</connection>
   <developerConnection>scm:git:ssh://github.com:soumyadip007/DBJ.jar.git</developerConnection>
-   <url>https://github.com/soumyadip007/DBJ.jar</url>
+   <url>https://github.com/soumyadip007/DBJ.jar/tree/master/DBJ</url>
 </scm>
   
   
