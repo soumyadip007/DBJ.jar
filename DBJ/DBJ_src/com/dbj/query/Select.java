@@ -218,7 +218,7 @@ public class Select {
 		i=1;
 		while(i<n)
 		{
-			statement=statement+","+index[i]+"='"+value[i]+"'";
+			statement=statement+" and "+index[i]+"='"+value[i]+"'";
 			i++;
 		}
 
@@ -232,9 +232,10 @@ public class Select {
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
 		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
-		
+	//	System.out.print(mainStmt);
 		
 		LOGGER.log(Level.INFO,"Query : "+mainStmt);
+		
 		try {
 			PreparedStatement st=Connect.con.prepareStatement(mainStmt);
 		
