@@ -231,7 +231,7 @@ public class Select {
 	{
 		LOGGER.log(Level.INFO,"Fetch from : "+table);
 		
-		String mainStmt="Select * from "+table+" where "+index+"='"+value+"'";
+		String mainStmt="Select * from "+table+" where "+genAnd(index,value);
 		
 		
 		LOGGER.log(Level.INFO,"Query : "+mainStmt);
