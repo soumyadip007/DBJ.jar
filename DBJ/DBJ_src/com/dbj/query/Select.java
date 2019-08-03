@@ -209,6 +209,16 @@ public class Select {
 		return rs;
 	}
 	
+	public static String genAnd(String[] index,String[] value)
+	{
+		String x="";
+		int n=value.length,i=0;
+		while(i<n)
+		{
+			
+		}
+		
+	}
 
 	public static ResultSet Get(String table,String[] index,String[] value)
 	{
