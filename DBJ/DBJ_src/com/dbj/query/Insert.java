@@ -16,17 +16,19 @@ public class Insert {
 		while(i<n)
 		{
 			statement=statement+","+param[i++];
+			LOGGER.log(Level.INFO,"Configuring "+statement);
 		}
+		LOGGER.log(Level.INFO,statement);
 		return statement;
 	}
 	
 	public static void Insert(Connection con,String account,String[] param,String[] value) {
+
 		
-		
-	//	PreparedStatement pr=(PreparedStatement) con.prepareStatement("");
-			
 		
 	}
+	
+	
 	public static void main(String args[]) {
 		
 		
