@@ -22,8 +22,12 @@ class Dao_Test {
 	
 		Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 		String[] index={"first_name", "last_name", "email"};
-		String[] value={"Soumyadip", "Chowdhury", "gdg@gmail.com"};
+		String[] value={"Soumyadip", "Chowdhury", "gdgDevfest@gmail.com"};
+		
+		
 		Insert.Save("customer",index,value);
+		
+		
 		ResultSet rs=Select.Get("customer",index,value);
 		try {
 			while(rs.next())
