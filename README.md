@@ -87,7 +87,6 @@ For building and running the application you need:
 
 # Released
 - Jar file
-
 - [Jira Deployment](https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829)
 
 # Yet to release (Maven Central Deployment)
