@@ -88,11 +88,11 @@ Jira Deployment (Issue: Resolved): https://issues.sonatype.org/browse/OSSRH-5050
 # Released
 - Jar file
 # Yet to release
--Maven (POM.XML)
--Gradle
--SBT
--Ivy
--Grape
--Leiningen
--Buildr
+- Maven (POM.XML)
+- Gradle
+- SBT
+- Ivy
+- Grape
+- Leiningen
+- Buildr
 
