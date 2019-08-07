@@ -13,17 +13,17 @@ For building and running the application you need:
 
 - Set the connection object
 ```shell
-	public static  void  Connect(String Driver,String Path,String U,String P) {
-       ........
+	public static  void  Connect(String Driver,String Path,String Username,String Password) {
+     	    ........
 		}
 ```
 
 - Get the connection object
 
 ```shell
-	public static  Connection  Connect(String Driver,String Path,String U,String P) {
-       ........
-      return connection;
+	public static  Connection  Connect(String Driver,String Username,String Password {
+      	   ........
+    	  return connection;
 		}
 ```
 
