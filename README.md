@@ -6,7 +6,7 @@ A JAR file for replacement of native JDBC protocol ,which can connect to databas
 
 For building and running the application you need:
 
-- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+- [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or above
 - Database (MySql/Oracle/DB2)
  
 ## Call the following methods (Static) and pass appropriate parameters 
@@ -81,4 +81,8 @@ For building and running the application you need:
       	    ........
 	   return resultSet;
     	 }
+```
+
+```shell
+Jira Deployment (Issue: Resolved): https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829
 ```
