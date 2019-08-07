@@ -7,7 +7,7 @@ A JAR file for replacement of native JDBC protocol ,which can connect to databas
 For building and running the application you need:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or above
-- Database (MySql/Oracle/DB2)
+- Database (MySql/Oracle/DB2/MySql Server) [MySql is preferable]
  
 ## Call the following methods (Static) and pass appropriate parameters 
 - Connection class (Set Universal Connection, Get Connection Object) @Overloading
