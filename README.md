@@ -15,6 +15,8 @@ For building and running the application you need:
 - Select Class (GetAll with Connection object,GetAll without Connection object,Get specific field with/without Connection object)  @Overloading
 - Update Class (Yet to implement)
 - Delete Class (Yet to implement)
+- Trigger Class (Yet to implement)
+- Cascading Rollback for Transaction (Yet to implement)
 
 # Connection Class (package com.dbj.connection)
 
