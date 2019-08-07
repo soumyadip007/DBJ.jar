@@ -83,6 +83,5 @@ For building and running the application you need:
     	 }
 ```
 
-```shell
 Jira Deployment (Issue: Resolved): https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829
-```
+
