@@ -150,62 +150,7 @@ public class Insert {
 			
 			LOGGER.log(Level.WARNING, "SQLException");
 			e.printStackTrace();
-		}
-		
-		
-		
-		
-	}
-	
-	
-	public static void main(String args[]) {
-
-	Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
-	String[] l={"first_name", "last_name", "email"};
-	//String[] p={"first_name", "last_name"};
-	Save("customer",l,l);
-	
-	
-	/*
-		
-	String[] l={"first_name", "last_name", "email"};
-	String paramResult;
-	LOGGER.log(Level.INFO, paramResult=ParamOpt(l));
-	
-	String valueResult;
-	LOGGER.log(Level.INFO, valueResult=getMark(l));
-	int n=l.length;
-	
-	String mainStmt="INSERT INTO "+"customer"+"("+paramResult+") values("+valueResult+")";
-	LOGGER.log(Level.INFO, mainStmt);
-	
-	try {
-		PreparedStatement st=Connect.con.prepareStatement(mainStmt);
-		int i=0;
-		while(i<n)
-		{
-			st.setString((i+1), l[i]);
-		i++;
-		}
-
-		int check=st.executeUpdate();
-		if(check==1)
-		{
-			LOGGER.log(Level.INFO, "Data Successfully added");
-		}
-		else
-		{
-			LOGGER.log(Level.INFO, "Database connection failed");
-		}
-		
-	} catch (SQLException e) {
-		
-		LOGGER.log(Level.WARNING, "SQLException");
-		e.printStackTrace();
-	}*/
-	
-	
-	
-	}
+		}		
+	}	
 
 }
