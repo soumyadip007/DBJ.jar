@@ -1,4 +1,4 @@
-package com.dbj.dao;
+package com.dbj.test.driver;
 
 
 import java.sql.Connection;
@@ -19,7 +19,12 @@ class Dao_Test {
 	public static void main(String args[]){
 	
 	//	Connection con=(Connection) Connect.GetConnect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/resell","root","");
-	
+	//ResultSet rs=Select.Get(conn,"customer");
+	//Insert.Save(con,"customer",index,value);
+		
+		
+	//----------With out making a Connection object-----------------
+		
 		Connect.Connect("com.mysql.jdbc.Driver","jdbc:mysql://localhost:3306/springcurd","root","");
 		String[] index={"first_name", "last_name", "email"};
 		String[] value={"Soumyadip", "Chowdhury", "gdgDevfest@gmail.com"};
@@ -27,6 +32,7 @@ class Dao_Test {
 		
 		Insert.Save("customer",index,value);
 		
+		//ResultSet rs=Select.Get("customer");
 		
 		ResultSet rs=Select.Get("customer",index,value);
 		try {
