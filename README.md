@@ -36,3 +36,9 @@ For building and running the application you need:
       	   ........
     	 }
 ```
+
+```shell
+	public static void Save(Connection con, String table_name, String[] parameters, String[] value) {
+      	   ........
+    	 }
+```
