@@ -65,3 +65,26 @@ For building and running the application you need:
     	 }
 ```
 
+
+
+```shell
+	public static ResultSet GetAll(Connection con,String table){
+      	    ........
+	   return resultSet;
+    	 }
+```
+
+```shell
+	public static ResultSet Get(String table,String index,String value){
+      	    ........
+	   return resultSet;
+    	 }
+```
+
+
+```shell
+	public static ResultSet Get(Connection con,String table,String index,String value){
+      	    ........
+	   return resultSet;
+    	 }
+```
