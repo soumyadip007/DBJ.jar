@@ -8,3 +8,22 @@ For building and running the application you need:
 
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - Database (MySql/Oracle/DB2)
+
+# Connection Clss
+
+- Set the connection object
+```shell
+	public static  void  Connect(String Driver,String Path,String U,String P) {
+       ........
+		}
+```
+
+- Get the connection object
+
+```shell
+	public static  Connection  Connect(String Driver,String Path,String U,String P) {
+       ........
+      return connection;
+		}
+```
+
