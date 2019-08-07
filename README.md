@@ -1,5 +1,5 @@
 # DBJ.jar
-A JAR file for replacement of native JDBC protocol ,which can connect to database with some Methods, So user just have to give the credentials and the parameter into the function ,DBJ will handle the rest part(Connection, Driver Manager, Prepared Statement, Resultset etc. )
+A JAR file for replacement of native JDBC protocol ,which can connect to database by just calling some Methods, So user just have to give the credentials and the parameter into the function ,DBJ will handle the rest part(Connection, Driver Manager, Prepared Statement, Resultset etc. )
 
 
 ## Requirements
@@ -84,4 +84,15 @@ For building and running the application you need:
 ```
 
 Jira Deployment (Issue: Resolved): https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829
+
+# Released
+- Jar file
+# Yet to release
+-Maven (POM.XML)
+-Gradle
+-SBT
+-Ivy
+-Grape
+-Leiningen
+-Buildr
 
