@@ -53,13 +53,15 @@ For building and running the application you need:
 ```shell
 	public static ResultSet GetAll(String table){
       	   ........
+	   return resultSet;
     	 }
 ```
 
 
 ```shell
 	public static ResultSet GetAll(Connection con,String table){
-      	   ........
+      	    ........
+	   return resultSet;
     	 }
 ```
 
