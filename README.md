@@ -36,12 +36,13 @@ For building and running the application you need:
 
 # Insert Class (package com.dbj.query)
 
+- Save the attributes (Don't pass connection object) 
 ```shell
 	public static void Save(String table_name, String[] parameters, String[] value) {
       	   ........
     	 }
 ```
-
+- Save the attributes (Pass connection object) 
 ```shell
 	public static void Save(Connection con, String table_name, String[] parameters, String[] value) {
       	   ........
@@ -50,6 +51,7 @@ For building and running the application you need:
 
 # Select Class (package com.dbj.query)
 
+- Get all attributes from the table (Don't pass connection object) 
 ```shell
 	public static ResultSet GetAll(String table){
       	   ........
@@ -57,16 +59,7 @@ For building and running the application you need:
     	 }
 ```
 
-
-```shell
-	public static ResultSet GetAll(Connection con,String table){
-      	    ........
-	   return resultSet;
-    	 }
-```
-
-
-
+- Get all attributes from the table (Pass connection object) 
 ```shell
 	public static ResultSet GetAll(Connection con,String table){
       	    ........
