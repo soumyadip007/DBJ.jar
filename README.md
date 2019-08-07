@@ -13,8 +13,8 @@ For building and running the application you need:
 - Connection class (Set Universal Connection, Get Connection Object) @Overloading
 - Insert Class (Save method with Connection object, Save method without Connection object)
 - Select Class (GetAll with Connection object,GetAll without Connection object,Get specific field with/without Connection object)
-
-
+- Update Class (Yet to implement)
+- Delete Class (Yet to implement)
 
 # Connection Class (package com.dbj.connection)
 
