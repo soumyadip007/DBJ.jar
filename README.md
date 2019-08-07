@@ -47,3 +47,19 @@ For building and running the application you need:
       	   ........
     	 }
 ```
+
+# Select Class (package com.dbj.query)
+
+```shell
+	public static ResultSet GetAll(String table){
+      	   ........
+    	 }
+```
+
+
+```shell
+	public static ResultSet GetAll(Connection con,String table){
+      	   ........
+    	 }
+```
+
