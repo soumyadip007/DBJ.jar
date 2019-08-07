@@ -85,7 +85,7 @@ For building and running the application you need:
     	 }
 ```
 
-Jira Deployment (Issue: Resolved): https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829
+[Jira Deployment] (Issue: Resolved): (https://issues.sonatype.org/browse/OSSRH-50506?focusedCommentId=770829&page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel#comment-770829)
 
 # Released
 - Jar file
