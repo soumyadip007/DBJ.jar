@@ -67,6 +67,7 @@ For building and running the application you need:
     	 }
 ```
 
+- Get some specific attribute from the table (Don't connection object) 
 ```shell
 	public static ResultSet Get(String table,String index,String value){
       	    ........
@@ -74,7 +75,7 @@ For building and running the application you need:
     	 }
 ```
 
-
+- Get some specific attribute from the table (Pass connection object) 
 ```shell
 	public static ResultSet Get(Connection con,String table,String index,String value){
       	    ........
