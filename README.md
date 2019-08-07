@@ -9,10 +9,10 @@ For building and running the application you need:
 - [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 - Database (MySql/Oracle/DB2)
  
-## Call the following methods (Static) and pass appropriate Parameter 
+## Call the following methods (Static) and pass appropriate parameters 
 - Connection class (Set Universal Connection, Get Connection Object) @Overloading
-- Insert Class (Save method with Connection object, Save method without Connection object)
-- Select Class (GetAll with Connection object,GetAll without Connection object,Get specific field with/without Connection object)
+- Insert Class (Save method with Connection object, Save method without Connection object)  @Overloading
+- Select Class (GetAll with Connection object,GetAll without Connection object,Get specific field with/without Connection object)  @Overloading
 - Update Class (Yet to implement)
 - Delete Class (Yet to implement)
 
