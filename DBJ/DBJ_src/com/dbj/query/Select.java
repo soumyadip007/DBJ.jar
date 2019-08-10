@@ -8,7 +8,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.dbj.connection.Connect;
-
+/**
+ * 
+ * @author Soumyadip Chowdhury
+ * @github soumyadip007
+ *
+ */
 public class Select {
 	
 	private final static Logger LOGGER =Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 

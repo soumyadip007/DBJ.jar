@@ -10,7 +10,12 @@ import java.util.logging.Logger;
 import com.dbj.connection.Connect;
 import com.dbj.query.Insert;
 import com.dbj.query.Select;
-
+/**
+ * 
+ * @author Soumyadip Chowdhury
+ * @github soumyadip007
+ *
+ */
 class Dao_Test {
 	
 	 private final static Logger LOGGER =Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 

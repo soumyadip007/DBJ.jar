@@ -8,7 +8,12 @@ import java.util.logging.Logger;
 import java.sql.*;
 //import com.mysql.jdbc.Connection;
 
-
+/**
+ * 
+ * @author Soumyadip Chowdhury
+ * @github soumyadip007
+ *
+ */
 public class Connect {
 
 	private final static Logger LOGGER =Logger.getLogger(Logger.GLOBAL_LOGGER_NAME); 
