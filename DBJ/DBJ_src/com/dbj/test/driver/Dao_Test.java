@@ -39,18 +39,18 @@ class Dao_Test {
 		
 		//ResultSet rs=Select.Get("customer");
 		
-		ResultSet rs=Select.Get("customer",index,value);
-		try {
-			while(rs.next())
-			{
-				System.out.println(rs.getString(2));
-				System.out.println(rs.getString(4));
-			}
-		} catch (SQLException e) {
-			
-			e.printStackTrace();
-		}
-	
+//		ResultSet rs=Select.Get("customer",index,value);
+//		try {
+//			while(rs.next())
+//			{
+//				System.out.print(rs.getString(2)+"   ");
+//				System.out.println(rs.getString(4));
+//			}
+//		} catch (SQLException e) {
+//			
+//			e.printStackTrace();
+//		}
+//	
 	}
 		
 	}
